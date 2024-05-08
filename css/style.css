@@ -1,0 +1,13 @@
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color-primary);
+}
+
+:root {
+    --bg-color: #ffffff;
+    --text-color-primary: #18191F;
+    --text-color-secondary: #ffffff;
+    --text-color-tertiary: #969BAB;
+    --text-color-quaternary: #D9DBE1;
+    --color-accent: #8C30F5;
+}
