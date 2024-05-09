@@ -1,7 +1,20 @@
 body {
     background-color: var(--bg-color);
     color: var(--text-color-primary);
+    font-family: 'Manrope', sans-serif;
 }
+
+a {
+    text-decoration: none;
+    /* Убирает подчеркивание ссылок */
+}
+
+ul {
+    list-style: none;
+    /* Убирает маркеры в списке */
+}
+
+
 
 :root {
     --bg-color: #ffffff;
@@ -10,4 +23,287 @@ body {
     --text-color-tertiary: #969BAB;
     --text-color-quaternary: #D9DBE1;
     --color-accent: #8C30F5;
+}
+
+/* Header */
+
+.logo {
+    color: var(--text-color-primary);
+
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.42;
+    /* 142.857% */
+}
+
+.nav-link {
+    color: var(--text-color-primary);
+
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.42;
+    /* 142.857% */
+}
+
+.logo:hover,
+.logo:focus {
+    color: var(--color-accent);
+    transition: color 250ms;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    color: var(--color-accent);
+    transition: color 250ms;
+}
+
+/* Hero */
+
+.hero-title {
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 1.36;
+    /* 136.111% */
+}
+
+.hero-text {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.77;
+    /* 177.778% */
+}
+
+.hero-button {
+    display: inline-block;
+    padding: 16px 41px;
+
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.5;
+    /* 150% */
+
+    border-radius: 8px;
+    color: var(--text-color-secondary);
+    background: var(--color-accent);
+}
+
+.hero-button:hover,
+.hero-button:focus {
+    background-color: var(--text-color-primary);
+    color: red;
+    transition: color 250ms;
+}
+
+/* Partners */
+
+.partners-title {
+    text-align: center;
+
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 1.33;
+    /* 133.333% */
+}
+
+/* Features */
+
+.features-title {
+    text-align: center;
+
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 1.33;
+    /* 133.333% */
+}
+
+.features-description {
+    text-align: center;
+
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.77;
+    /* 177.778% */
+}
+
+.features-list__title {
+    text-align: center;
+
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.33;
+    /* 133.333% */
+}
+
+.features-list__description {
+    text-align: center;
+
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.62;
+    /* 162.5% */
+}
+
+/* Testimonials */
+
+.testimonials-title {
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 1.33;
+    /* 133.333% */
+}
+
+.testimonials-description {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    /* 177.778% */
+}
+
+.testimonial-item__description {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.77;
+    /* 177.778% */
+}
+
+.testimonial-item__name {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.55;
+    /* 155.556% */
+}
+
+.testimonial-item__position {
+    color: var(--text-color-tertiary);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.71;
+    /* 171.429% */
+}
+
+/* Experience */
+
+.experience-title {
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 1.33;
+    /* 133.333% */
+}
+
+.experience-description {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.77;
+    /* 177.778% */
+}
+
+.experience-item__title {
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 1.43;
+    /* 142.857% */
+}
+
+.experience-item__description {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.62;
+    /* 162.5% */
+}
+
+/* Call to Action */
+
+.call-to-action-title {
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 1.35;
+    /* 135% */
+}
+
+.call-to-action-description {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.77;
+    /* 177.778% */
+}
+
+.call-to-action__button {
+    color: var(--color-accent);
+
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.5;
+    /* 150% */
+}
+
+/* Project Management */
+
+.project-management-title {
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 1.33;
+    /* 133.333% */
+}
+
+.project-management-description {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.77;
+    /* 177.778% */
+}
+
+/* Footer */
+
+.site-footer {
+    background-color: #0B0D17;
+}
+
+.footer-nav__item {
+    color: var(--text-color-secondary);
+
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.62;
+    /* 162.5% */
+}
+
+
+
+.footer-description {
+    color: var(--text-color-quaternary);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.71;
+}
+
+.footer-nav__item:hover,
+.footer-nav__item:focus {
+    color: var(--color-accent);
+    transition: color 250ms;
 }
