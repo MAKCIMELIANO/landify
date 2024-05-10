@@ -8,181 +8,216 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+    integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
   <!-- Header -->
-  <header class="header">
+  <header class="header container">
     <a href="#" class="logo">
       <img src="./images/logo.svg" alt="Логотип">
       Landify
     </a>
-    <nav class="main-nav">
-      <ul>
-        <li><a href="#" class="nav-link">Главная</a></li>
-        <li><a href="#" class="nav-link">О нас</a></li>
-        <li><a href="#" class="nav-link">Услуги</a></li>
-        <li><a href="#" class="nav-link">Контакты</a></li>
+    <nav class="header-nav">
+      <ul class="header-nav__list">
+        <li><a href="#" class="header-nav__link">Главная</a></li>
+        <li><a href="#" class="header-nav__link">О нас</a></li>
+        <li><a href="#" class="header-nav__link">Услуги</a></li>
+        <li><a href="#" class="header-nav__link">Контакты</a></li>
       </ul>
     </nav>
   </header>
   <main>
     <!-- Hero -->
     <section class="hero">
-      <h1 class="hero-title">Organise projects. <br> Get more done.</h1>
-      <p class="hero-text">Lorem ipsum is common placeholder text used to demonstrate the graphic elements of a document
-        or visual presentation.</p>
-      <a href="form.html" class="hero-button">Get Started</a>
+      <div class="container">
+        <h1 class="hero-title">Organise projects. <br> Get more done.</h1>
+        <p class="hero-text">Lorem ipsum is common placeholder text used to demonstrate the graphic elements of a
+          document
+          or visual presentation.</p>
+        <a href="form.html" class="hero-button">Get Started</a>
+      </div>
     </section>
     <!-- Partners -->
     <section class="partners">
-      <h2 class="partners-title">Our partners</h2>
-      <ul class="partners-list">
-        <li><img src="./images/Airbnb Logo.svg" alt="Airbnb" class="partner-logo"></li>
-        <li><img src="./images/Hubspot Logo.svg" alt="Hubspot" class="partner-logo"></li>
-        <li><img src="./images/Google Logo.svg" alt="Google" class="partner-logo"></li>
-        <li><img src="./images/Microsoft Logo.svg" alt="Microsoft" class="partner-logo"></li>
-        <li><img src="./images/Walmart Logo.svg" alt="Walmart" class="partner-logo"></li>
-        <li><img src="./images/FedEx Logo.svg" alt="FedEx" class="partner-logo"></li>
-      </ul>
+      <div class="container">
+        <h2 class="partners-title">Our partners</h2>
+        <ul class="partners-list">
+          <li><img src="./images/Airbnb Logo.svg" alt="Airbnb" class="partner-logo"></li>
+          <li><img src="./images/Hubspot Logo.svg" alt="Hubspot" class="partner-logo"></li>
+          <li><img src="./images/Google Logo.svg" alt="Google" class="partner-logo"></li>
+          <li><img src="./images/Microsoft Logo.svg" alt="Microsoft" class="partner-logo"></li>
+          <li><img src="./images/Walmart Logo.svg" alt="Walmart" class="partner-logo"></li>
+          <li><img src="./images/FedEx Logo.svg" alt="FedEx" class="partner-logo"></li>
+        </ul>
+      </div>
     </section>
     <!-- Features -->
     <section class="features">
-      <h2 class="features-title">Tailor-made features</h2>
-      <p class="features-description">Lorem ipsum is common placeholder text used to demonstrate the graphic elements of
-        a document or visual presentation.</p>
-      <ul class="features-list">
-        <li>
-          <h3 class="features-list__title">Robust workflow</h3>
-          <p class="features-list__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat nibh
-            tristique ipsum.</p>
-        </li>
-        <li>
-          <h3 class="features-list__title">Flexibility</h3>
-          <p class="features-list__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat nibh
-            tristique ipsum.</p>
-        </li>
-        <li>
-          <h3 class="features-list__title">User friendly</h3>
-          <p class="features-list__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat nibh
-            tristique ipsum.</p>
-        </li>
-        <li>
-          <h3 class="features-list__title">Multiple layouts</h3>
-          <p class="features-list__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat nibh
-            tristique ipsum.</p>
-        </li>
-        <li>
-          <h3 class="features-list__title">Better components</h3>
-          <p class="features-list__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat nibh
-            tristique ipsum.</p>
-        </li>
-        <li>
-          <h3 class="features-list__title">Well organised</h3>
-          <p class="features-list__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat nibh
-            tristique ipsum.</p>
-        </li>
-      </ul>
+      <div class="container">
+        <h2 class="features-title">Tailor-made features</h2>
+        <p class="features-description">Lorem ipsum is common placeholder text used to demonstrate the graphic elements
+          of
+          a document or visual presentation.</p>
+        <ul class="features-list">
+          <li>
+            <h3 class="features-list__title">Robust workflow</h3>
+            <p class="features-list__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat nibh
+              tristique ipsum.</p>
+          </li>
+          <li>
+            <h3 class="features-list__title">Flexibility</h3>
+            <p class="features-list__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat nibh
+              tristique ipsum.</p>
+          </li>
+          <li>
+            <h3 class="features-list__title">User friendly</h3>
+            <p class="features-list__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat nibh
+              tristique ipsum.</p>
+          </li>
+          <li>
+            <h3 class="features-list__title">Multiple layouts</h3>
+            <p class="features-list__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat nibh
+              tristique ipsum.</p>
+          </li>
+          <li>
+            <h3 class="features-list__title">Better components</h3>
+            <p class="features-list__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat nibh
+              tristique ipsum.</p>
+          </li>
+          <li>
+            <h3 class="features-list__title">Well organised</h3>
+            <p class="features-list__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat nibh
+              tristique ipsum.</p>
+          </li>
+        </ul>
+      </div>
     </section>
     <!-- Testimonials -->
     <section class="testimonials">
-      <h2 class="testimonials-title">Real Stories from <br> Real Customers</h2>
-      <p class="testimonials-description">Get inspired by these stories.</p>
-      <ul class="testimonials-list">
-        <li class="testimonial-item">
-          <img src="./images/Hubspot Logo.svg" alt="Hubspot" class="testimonial-item__logo">
-          <p class="testimonial-item__description">To quickly start my startup landing page design, I was looking for a
-            landing page UI Kit. Landify is one of
-            the best
-            landing page UI kit I have come across. It’s so flexible, well organised and easily editable.</p>
-          <h3 class="testimonial-item__name">Floyd Miles</h3>
-          <p class="testimonial-item__position">Vice President, GoPro</p>
-        </li>
-        <li class="testimonial-item">
-          <div class="testimonial">
-            <img src="./images/Airbnb Logo.svg" alt="Airbnb" class="testimonial__logo">
-            <p class="testimonial-item__description">I used landify and created a landing page for my startup within a
-              week. The Landify UI Kit is simple and highly
-              intuitive, so anyone can use it.</p>
-            <h3 class="testimonial-item__name">Jane Cooper</h3>
-            <p class="testimonial-item__position">CEO, Airbnb</p>
-        </li>
-        <li class="testimonial-item">
-          <div class="testimonial">
-            <img src="./images/FedEx Logo.svg" alt="FedEx" class="testimonial__logo">
-            <p class="testimonial-item__description">Landify saved our time in designing my company page.</p>
-            <h3 class="testimonial-item__name">Kristin Watson</h3>
-            <p class="testimonial-item__position">Co-Founder, FedEx</p>
-        </li>
-      </ul>
+      <div class="container">
+        <h2 class="testimonials-title">Real Stories from <br> Real Customers</h2>
+        <p class="testimonials-description">Get inspired by these stories.</p>
+        <ul class="testimonials-list">
+          <li class="testimonial-item">
+            <img src="./images/Hubspot Logo.svg" alt="Hubspot" class="testimonial-item__logo">
+            <p class="testimonial-item__description">To quickly start my startup landing page design, I was looking for
+              a
+              landing page UI Kit. Landify is one of
+              the best
+              landing page UI kit I have come across. It’s so flexible, well organised and easily editable.</p>
+            <h3 class="testimonial-item__name">Floyd Miles</h3>
+            <p class="testimonial-item__position">Vice President, GoPro</p>
+          </li>
+          <li class="testimonial-item">
+            <div class="testimonial">
+              <img src="./images/Airbnb Logo.svg" alt="Airbnb" class="testimonial__logo">
+              <p class="testimonial-item__description">To quickly start my startup landing page design, I was looking
+                for a landing page UI Kit. Landify is one of the best
+                landing page UI kit I have come across. It’s so flexible, well organised and easily editable.</p>
+              <h3 class="testimonial-item__name">Jane Cooper</h3>
+              <p class="testimonial-item__position">CEO, Airbnb</p>
+          </li>
+          <li class="testimonial-item">
+            <div class="testimonial">
+              <img src="./images/FedEx Logo.svg" alt="FedEx" class="testimonial__logo">
+              <p class="testimonial-item__description">To quickly start my startup landing page design, I was looking
+                for a landing page UI Kit. Landify is one of the best
+                landing page UI kit I have come across. It’s so flexible, well organised and easily editable.</p>
+              <h3 class="testimonial-item__name">Kristin Watson</h3>
+              <p class="testimonial-item__position">Co-Founder, FedEx</p>
+          </li>
+        </ul>
+      </div>
     </section>
     <!-- Experience -->
-    <section class="experience">
-      <h2 class="experience-title">Our 7 years of <br> achievements</h2>
-      <p class="experience-description">With our super powers we have reached this</p>
-      <ul class="experience-list">
-        <li class="experience-item">
-          <h3 class="experience-item__title">10,000&#43;</h3>
-          <p class="experience-item__description">Downloads per day</p>
-        </li>
-        <li class="experience-item">
-          <h3 class="experience-item__title">2 Million</h3>
-          <p class="experience-item__description">Users</p>
-        </li>
-        <li class="experience-item">
-          <h3 class="experience-item__title">500&#43;</h3>
-          <p class="experience-item__description">Clients</p>
-        </li>
-        <li class="experience-item">
-          <h3 class="experience-item__title">140</h3>
-          <p class="experience-item__description">Countries</p>
-        </li>
-      </ul>
+    <section class="experience container">
+      <div>
+        <h2 class="experience-title">Our 7 years of <br> achievements</h2>
+        <p class="experience-description">With our super powers we have reached this</p>
+      </div>
+      <div>
+        <ul class="experience-list">
+          <li class="experience-item">
+            <h3 class="experience-item__title">10,000&#43;</h3>
+            <p class="experience-item__description">Downloads per day</p>
+          </li>
+          <li class="experience-item">
+            <h3 class="experience-item__title">2 Million</h3>
+            <p class="experience-item__description">Users</p>
+          </li>
+          <li class="experience-item">
+            <h3 class="experience-item__title">500&#43;</h3>
+            <p class="experience-item__description">Clients</p>
+          </li>
+          <li class="experience-item">
+            <h3 class="experience-item__title">140</h3>
+            <p class="experience-item__description">Countries</p>
+          </li>
+        </ul>
+      </div>
     </section>
     <!-- Call to Action -->
-    <section class="call-to-action">
-      <img src="./images/polska-gielda-bitcoina.png" width="540" height="540" alt="bitcoina"
-        class="call-to-action__image">
-      <h2 class="call-to-action__title">Headline</h2>
-      <p class="call-to-action__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Condimentum diam
-        orci
-        pretium a pharetra, feugiat cursus. Dictumst risus, sem egestas odio cras adipiscing vulputate. Nisi, risus in
-        suscipit non. Non commodo volutpat, pharetra, vel.</p>
-      <a href="#" class="call-to-action__button">Get started</a>
+    <section class="call-to-action container">
+      <div>
+        <img src="./images/polska-gielda-bitcoina.png" width="540" height="540" alt="bitcoina"
+          class="call-to-action__image">
+      </div>
+      <div class="call-to-action__block">
+        <h2 class="call-to-action__title">Headline</h2>
+        <p class="call-to-action__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Condimentum diam
+          orci
+          pretium a pharetra, feugiat cursus. Dictumst risus, sem egestas odio cras adipiscing vulputate. Nisi, risus in
+          suscipit non. Non commodo volutpat, pharetra, vel.</p>
+        <a href="#" class="call-to-action__button">Get started</a>
+      </div>
     </section>
     <!-- Call to Action 2 -->
-    <section class="call-to-action">
-      <h2>Enter the world of all fashion trends</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venenatis scelerisque at quam congue posuere libero in
-        sit
-        quam. Consequat, scelerisque non tincidunt sit lectus senectus.</p>
-      <img src="./images/bitcoin-project-management.jpg" width="1110" height="400" alt="bitcoin">
+    <section class="call-to-action-2 container">
+      <div class="call-to-action-2-block">
+        <h2 class="call-to-action-2-title">Enter the world of all <br> fashion trends</h2>
+        <p class="call-to-action-2-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venenatis
+          scelerisque at quam congue posuere libero in
+          sit
+          quam. Consequat, scelerisque non tincidunt sit lectus senectus.</p>
+      </div>
+      <img src="./images/bitcoin-project-management.jpg" class="call-to-action-2-images" width="1110" height="400"
+        alt="bitcoin">
     </section>
     <!-- Project Management -->
     <section class="project-management">
-      <h2 class="project-management__title">Manage your projects <br> from your mobile</h2>
-      <p class="project-management__description">Download the app to manage your projects, keep track of the progress
-        and complete tasks without procastinating. Stay on
-        track and complete on time!</p>
-      <img src="./images/bitcoin-call-to-action-2.webp" width="540" height="540" alt="bitcoin"
-        class="project-management__image">
+      <div class="project-management__block container">
+        <div>
+          <h2 class="project-management__title">Manage your projects <br> from your mobile</h2>
+          <p class="project-management__description">Download the app to manage your projects, keep track of the
+            progress
+            and complete tasks without procastinating. Stay on
+            track and complete on time!</p>
+        </div>
+        <img src="./images/bitcoin-call-to-action-2.webp" width="540" height="540" alt="bitcoin"
+          class="project-management__image">
+      </div>
     </section>
   </main>
   <!-- Footer -->
   <footer class="site-footer">
-    <a class="footer-logo" href="#">
-      <img src="./images/logo.svg" alt="Logo" class="footer-logo__image">
-    </a>
-    <nav class="footer-nav">
-      <ul class="footer-nav__list">
-        <li><a href="#" class="footer-nav__item">Главная</a></li>
-        <li><a href="#" class="footer-nav__item">Каталог</a></li>
-        <li><a href="#" class="footer-nav__item">О нас</a></li>
-        <li><a href="#" class="footer-nav__item">Контакты</a></li>
-      </ul>
-    </nav>
-    <p class="footer-description">&copy; 2024 Landify UI Kit. All rights reserved</p>
+    <div class="container">
+      <a class="footer-logo" href="#">
+        <img src="./images/logo.svg" alt="Logo" class="footer-logo__image">
+      </a>
+      <nav class="footer-nav">
+        <ul class="footer-nav__list">
+          <li><a href="#" class="footer-nav__item">Главная</a></li>
+          <li><a href="#" class="footer-nav__item">Каталог</a></li>
+          <li><a href="#" class="footer-nav__item">О нас</a></li>
+          <li><a href="#" class="footer-nav__item">Контакты</a></li>
+        </ul>
+      </nav>
+      <p class="footer-description">&copy; 2024 Landify UI Kit. All rights reserved</p>
+    </div>
   </footer>
 </body>
 

@@ -1,3 +1,13 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
 body {
     background-color: var(--bg-color);
     color: var(--text-color-primary);
@@ -11,10 +21,20 @@ a {
 
 ul {
     list-style: none;
+    margin: 0;
+    padding: 0;
     /* Убирает маркеры в списке */
 }
 
-
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
 
 :root {
     --bg-color: #ffffff;
@@ -23,21 +43,45 @@ ul {
     --text-color-tertiary: #969BAB;
     --text-color-quaternary: #D9DBE1;
     --color-accent: #8C30F5;
+    --bg-project-management: #2EC5CE;
+    --bg-testimonials: #D5FAFC;
+}
+
+.container {
+    width: 1090px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 /* Header */
 
+.header {
+    display: flex;
+}
+
+.header-nav__list {
+    display: flex;
+    gap: 32px;
+    margin-left: 52px;
+}
+
 .logo {
     color: var(--text-color-primary);
 
-    font-size: 48px;
+    font-size: 38px;
     font-style: normal;
     font-weight: 700;
     line-height: 1.42;
     /* 142.857% */
 }
 
-.nav-link {
+.header-nav__link {
+    display: inline-block;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
     color: var(--text-color-primary);
 
     font-size: 14px;
@@ -53,15 +97,25 @@ ul {
     transition: color 250ms;
 }
 
-.nav-link:hover,
-.nav-link:focus {
+.header-nav__link:hover,
+.header-nav__link:focus {
     color: var(--color-accent);
     transition: color 250ms;
 }
 
 /* Hero */
 
+.hero {
+    background-image: url(/images/background-hero.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
 .hero-title {
+    padding-top: 194px;
+    margin-bottom: 48px;
+
     font-size: 72px;
     font-style: normal;
     font-weight: 800;
@@ -70,6 +124,10 @@ ul {
 }
 
 .hero-text {
+    margin-bottom: 48px;
+
+    width: 730px;
+
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
@@ -80,6 +138,7 @@ ul {
 .hero-button {
     display: inline-block;
     padding: 16px 41px;
+    margin-bottom: 300px;
 
     font-size: 20px;
     font-style: normal;
@@ -102,6 +161,7 @@ ul {
 /* Partners */
 
 .partners-title {
+    margin-bottom: 48px;
     text-align: center;
 
     font-size: 48px;
@@ -111,9 +171,19 @@ ul {
     /* 133.333% */
 }
 
+.partners-list {
+    display: flex;
+    justify-content: center;
+    gap: 64px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
 /* Features */
 
 .features-title {
+    margin-bottom: 8px;
+    padding-top: 64px;
     text-align: center;
 
     font-size: 48px;
@@ -124,13 +194,24 @@ ul {
 }
 
 .features-description {
+    margin-bottom: 48px;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
 
+    width: 540px;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
     line-height: 1.77;
     /* 177.778% */
+}
+
+.features-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    padding-bottom: 64px;
 }
 
 .features-list__title {
@@ -155,7 +236,13 @@ ul {
 
 /* Testimonials */
 
+.testimonials {
+    background-color: var(--bg-testimonials);
+}
+
 .testimonials-title {
+    padding-top: 120px;
+    margin-bottom: 8px;
     font-size: 48px;
     font-style: normal;
     font-weight: 800;
@@ -164,11 +251,27 @@ ul {
 }
 
 .testimonials-description {
+    margin-bottom: 24px;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
-    line-height: 32px;
+    line-height: 1.77;
     /* 177.778% */
+}
+
+.testimonials-list {
+    display: flex;
+    gap: 30px;
+    padding-bottom: 120px;
+}
+
+.testimonial-item {
+    width: 350px;
+    padding: 32px;
+    border-radius: 8px;
+    background: var(--text-color-secondary);
+    /* Dark Shadow */
+    box-shadow: 0px 10px 20px 0px rgba(41, 41, 42, 0.07);
 }
 
 .testimonial-item__description {
@@ -198,7 +301,14 @@ ul {
 
 /* Experience */
 
+.experience {
+    display: flex;
+}
+
 .experience-title {
+    width: 540px;
+    margin-bottom: 8px;
+    padding-top: 80px;
     font-size: 48px;
     font-style: normal;
     font-weight: 800;
@@ -207,11 +317,25 @@ ul {
 }
 
 .experience-description {
+    width: 540px;
+    padding-bottom: 80px;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
     line-height: 1.77;
     /* 177.778% */
+}
+
+.experience-list {
+    margin-right: 30px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* Два столбца */
+    grid-template-rows: repeat(2, auto);
+    gap: 30px;
 }
 
 .experience-item__title {
@@ -232,7 +356,16 @@ ul {
 
 /* Call to Action */
 
-.call-to-action-title {
+.call-to-action {
+    display: flex;
+    gap: 30px;
+}
+
+
+
+.call-to-action__title {
+    margin-bottom: 32px;
+    padding-top: 116px;
     font-size: 40px;
     font-style: normal;
     font-weight: 800;
@@ -240,7 +373,9 @@ ul {
     /* 135% */
 }
 
-.call-to-action-description {
+.call-to-action__description {
+    margin-bottom: 32px;
+    width: 444px;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
@@ -258,17 +393,28 @@ ul {
     /* 150% */
 }
 
-/* Project Management */
+/* Call to Action-2 */
 
-.project-management-title {
-    font-size: 48px;
-    font-style: normal;
-    font-weight: 800;
-    line-height: 1.33;
-    /* 133.333% */
+.call-to-action-2-block {
+    display: flex;
 }
 
-.project-management-description {
+.call-to-action-2-title {
+    padding-top: 64px;
+    padding-bottom: 48px;
+    width: 540px;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 1.35;
+    /* 135% */
+}
+
+.call-to-action-2-description {
+    padding-top: 64px;
+    padding-bottom: 48px;
+    margin-left: 30px;
+    width: 540px;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
@@ -276,10 +422,53 @@ ul {
     /* 177.778% */
 }
 
+.call-to-action-2-images {
+    padding-bottom: 64px;
+
+}
+
+/* Project Management */
+
+.project-management {
+    background-color: var(--bg-project-management);
+}
+
+.project-management__block {
+    display: flex;
+}
+
+.project-management__title {
+    padding-top: 68px;
+    margin-bottom: 8px;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 1.33;
+    /* 133.333% */
+}
+
+.project-management__description {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.77;
+    /* 177.778% */
+}
+
+.project-management__image {
+    padding-top: 68px;
+    padding-bottom: 68px;
+}
+
 /* Footer */
 
 .site-footer {
     background-color: #0B0D17;
+}
+
+.footer-logo__image {
+    padding-top: 56px;
+    padding-bottom: 24px;
 }
 
 .footer-nav__item {
@@ -292,9 +481,17 @@ ul {
     /* 162.5% */
 }
 
+.footer-nav {
+    padding-bottom: 24px;
+}
 
+.footer-nav__list {
+    display: flex;
+    gap: 24px;
+}
 
 .footer-description {
+    padding-bottom: 36px;
     color: var(--text-color-quaternary);
     font-size: 14px;
     font-style: normal;
