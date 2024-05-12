@@ -38,7 +38,7 @@
         <p class="hero-text">Lorem ipsum is common placeholder text used to demonstrate the graphic elements of a
           document
           or visual presentation.</p>
-        <a href="form.html" class="hero-button">Get Started</a>
+        <button id="openModalBtn" class="modal-button">Get Started</button>
       </div>
     </section>
     <!-- Partners -->
@@ -172,7 +172,8 @@
           orci
           pretium a pharetra, feugiat cursus. Dictumst risus, sem egestas odio cras adipiscing vulputate. Nisi, risus in
           suscipit non. Non commodo volutpat, pharetra, vel.</p>
-        <a href="#" class="call-to-action__button">Get started</a>
+        <button id="openModalBtn2" class="modal-button">Get Started</button>
+      </div>
       </div>
     </section>
     <!-- Call to Action 2 -->
@@ -219,6 +220,27 @@
       <p class="footer-description">&copy; 2024 Landify UI Kit. All rights reserved</p>
     </div>
   </footer>
+
+  <!-- modal -->
+
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Форма регистрации</h2>
+      <form id="registrationForm">
+        <label for="name">Имя:</label>
+        <input type="text" id="name" name="name" required><br><br>
+        <label for="phone">Телефон:</label>
+        <input type="tel" id="phone" name="phone" required><br><br>
+        <label for="email">Электронная почта:</label>
+        <input type="email" id="email" name="email" required><br><br>
+        <input type="submit" value="Зарегистрироваться">
+      </form>
+    </div>
+  </div>
+
+  <script src="./js/modal.js"></script>
+
 </body>
 
 </html>
