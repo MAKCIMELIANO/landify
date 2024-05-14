@@ -9,8 +9,8 @@ app.use(express.json());
 const transporter = nodemailer.createTransport({
   service: 'Outlook',
   auth: {
-    user: 'makcimeliano@outlook.com',
-    pass: 'gidromakcik1982',
+    user: 'your_email@example.com', // Добавьте свой адрес электронной почты
+    pass: 'your_password', // Добавьте свой пароль
   },
 });
 
@@ -23,8 +23,8 @@ app.post('/send-email', (req, res) => {
 
   // Настройка письма
   const mailOptions = {
-    from: 'makcimeliano@outlook.com',
-    to: 'makcimeliano@outlook.com',
+    from: 'your_email@example.com', // Добавьте свой адрес электронной почты
+    to: 'recipient_email@example.com', // Добавьте адрес электронной почты получателя
     subject: 'Новая заявка с вашего сайта',
     text: `Имя: ${name}\nТелефон: ${phone}\nEmail: ${email}`,
   };
